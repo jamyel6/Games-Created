@@ -26,6 +26,12 @@
     <sprite>sprites\sprite18</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_dialog_box</sprite>
+    <sprite>sprites\spr_chinin_run_up</sprite>
+    <sprite>sprites\spr_chinin_run_down</sprite>
+    <sprite>sprites\spr_chinin_run_right</sprite>
+    <sprite>sprites\spr_chinin_stand_down</sprite>
+    <sprite>sprites\spr_chinin_stand_right</sprite>
+    <sprite>sprites\spr_chinin_stand_up</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -46,6 +52,7 @@
       <scripts name="Enemy Helper Scripts">
         <script>scripts\scr_enemy_choose_next_state.gml</script>
         <script>scripts\scr_check_for_player.gml</script>
+        <script>scripts\scr_move_axis.gml</script>
       </scripts>
       <script>scripts\scr_enemy_idle_state.gml</script>
       <script>scripts\scr_enemy_stall_state.gml</script>
@@ -53,6 +60,8 @@
       <script>scripts\scr_enemy_chase_state.gml</script>
     </scripts>
     <script>scripts\scr_string_copy_words.gml</script>
+    <script>scripts\scr_save_game.gml</script>
+    <script>scripts\scr_load_game.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_lifeform_parent</object>
@@ -61,6 +70,7 @@
     <object>objects\obj_view</object>
     <object>objects\obj_dash_effect</object>
     <object>objects\obj_enemy_slime</object>
+    <object>objects\obj_enemy_chinin</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_player_stats</object>
     <object>objects\obj_expr</object>
@@ -71,6 +81,7 @@
     <object>objects\obj_sign</object>
     <object>objects\obj_input</object>
     <object>objects\obj_pause_menu</object>
+    <object>objects\obj_projectile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_one</room>

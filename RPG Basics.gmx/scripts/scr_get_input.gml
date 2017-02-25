@@ -6,6 +6,7 @@ down_key = keyboard_check(vk_down);
 dash_key = keyboard_check_pressed(ord('C'));
 attack_key = keyboard_check_pressed(ord('X'));
 pause_key = keyboard_check_pressed(vk_escape);
+spell_key = keyboard_check_pressed(ord('V'));
 
 // Get axis
 xaxis = (right_key - left_key);
@@ -18,7 +19,8 @@ if (gamepad_is_connected(0)) {
     yaxis = gamepad_axis_value(0, gp_axislv);
     dash_key = gamepad_button_check_pressed(0, gp_face1);
     attack_key = gamepad_button_check_pressed(0, gp_face3);
-    attack_key = gamepad_button_check_pressed(0, gp_start);
+    spell_key = gamepad_button_check_pressed(0, gp_face2);
+    pause_key = gamepad_button_check_pressed(0, gp_start);
 }
 
 
